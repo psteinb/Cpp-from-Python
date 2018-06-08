@@ -23,7 +23,7 @@ Peter Steinbach (steinbach@scionics.de, @psteinb_), C++UG Dresden, June 12, 2018
 &nbsp;
 &nbsp;
 
-<div style="color: white">
+<div style="color: white; background-color: grey;">
 Reinvent the wheel over-and-over?<br/>
 Invalidate other people's work?
 </div>
