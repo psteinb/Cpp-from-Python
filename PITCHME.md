@@ -30,10 +30,12 @@ Invalidate other people's work?
 
 +++?image=img/weights.jpeg
 
-&nbsp;
-&nbsp;
-
+<div style="color: white">
 C++ is for the heavy lifting!
+</div>
 
 +++?image=img/diverse-shoes.jpeg
 
+<div style="color: white">
+Teams are diverse.
+</div>
