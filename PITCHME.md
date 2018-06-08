@@ -19,7 +19,7 @@
 
 +++
 
----?image=img/laptop_at_night.jpeg
+---?image=img/laptop-at-night.jpeg
 
 Reinvent the wheel over-and-over?
 Invalidate other people's work?
