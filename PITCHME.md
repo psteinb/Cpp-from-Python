@@ -20,10 +20,16 @@ Peter Steinbach (steinbach@scionics.de, @psteinb_), C++UG Dresden, June 12, 2018
 
 +++?image=img/laptop-at-night.jpeg
 
-Reinvent the wheel over-and-over?
+&nbsp;
+&nbsp;
+
+Reinvent the wheel over-and-over?  
 Invalidate other people's work?
 
 +++?image=img/weights.jpeg
+
+&nbsp;
+&nbsp;
 
 C++ is for the heavy lifting!
 
