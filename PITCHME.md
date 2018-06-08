@@ -17,20 +17,15 @@ Peter Steinbach (steinbach@scionics.de, @psteinb_), C++UG Dresden, June 12, 2018
 
 ### __Why__ other languages?
 
-+++
 
----?image=img/laptop-at-night.jpeg
++++?image=img/laptop-at-night.jpeg
 
 Reinvent the wheel over-and-over?
 Invalidate other people's work?
 
-+++
-
----?image=img/weights.jpeg
++++?image=img/weights.jpeg
 
 C++ is for the heavy lifting!
 
-+++
-
----?image=img/diverse-shoes.jpeg
++++?image=img/diverse-shoes.jpeg
 
