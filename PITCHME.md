@@ -3,7 +3,7 @@
 ### C++ from Python
 ### A Report from the trenches
 
-[Peter Steinbach]{mailto:steinbach@scionics.de}, [@psteinb_]{https://twitter.com/psteinb_}, C++UG Dresden, June 12, 2018 
+Peter Steinbach (steinbach@scionics.de, @psteinb_), C++UG Dresden, June 12, 2018 
 
 ---
 
