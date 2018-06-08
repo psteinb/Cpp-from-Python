@@ -23,8 +23,10 @@ Peter Steinbach (steinbach@scionics.de, @psteinb_), C++UG Dresden, June 12, 2018
 &nbsp;
 &nbsp;
 
-Reinvent the wheel over-and-over?  
+<div style="color: white">
+Reinvent the wheel over-and-over?<br/>
 Invalidate other people's work?
+</div>
 
 +++?image=img/weights.jpeg
 
