@@ -19,18 +19,18 @@
 
 +++
 
----?image=assets/laptop_at_night.jpeg
+---?image=img/laptop_at_night.jpeg
 
 Reinvent the wheel over-and-over?
 Invalidate other people's work?
 
 +++
 
----?image=assets/weights.jpeg
+---?image=img/weights.jpeg
 
 C++ is for the heavy lifting!
 
 +++
 
----?image=assets/diverse-shoes.jpeg
+---?image=img/diverse-shoes.jpeg
 
