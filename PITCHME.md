@@ -235,10 +235,11 @@ Note:
 
 +++?image=img/pybind11-logo.png&size=70% auto
 
-<br>
-<br>
+<div>
 
 ### [pybind11](github.com/pybind/pybind11)
+
+</div>
 
 +++
 
