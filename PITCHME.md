@@ -166,7 +166,7 @@ Finally we do some work!
 
 +++?image=img/902px-Punishment_sisyph.jpg&size=auto 80%
 
-<div style="color: white; margin-top: 80%;margin-left: 80%;font-size: 14px">
+<div style="color: white; margin-top: 60%;margin-left: 80%;font-size: 14px">
 Titian, <a href="https://commons.wikimedia.org/wiki/File:Punishment_sisyph.jpg">Sisyphus</a>
 </div>
 
