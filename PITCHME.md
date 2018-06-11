@@ -222,3 +222,30 @@ Custom_new(PyTypeObject *type, PyObject *args, PyObject *kwds)
 +++?image=img/old_tools.jpeg
 
 ### Better Tools? 
+
+Note:
+- pure C API very verbose
+- some information encoded in function name
+- very C like interface
+
+---
+
+## How to interface?
+(the 21st century version)
+
++++?image=img/pybind11-logo.png&size=auto 80%
+
+### [pybind11](github.com/pybind/pybind11)
+
+
+---
+
+## Summary
+
++++
+
+### What I didn't discuss
+
++++
+
+###
