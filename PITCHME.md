@@ -233,7 +233,7 @@ Note:
 ## How to interface?
 (the 21st century version)
 
-+++?image=img/pybind11-logo.png&size=auto 80%
++++?image=img/pybind11-logo.png&size=auto 60%
 
 ### [pybind11](github.com/pybind/pybind11)
 
