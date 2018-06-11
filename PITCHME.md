@@ -388,7 +388,6 @@ py::class_<Person>(m, "Person")
     );
 ```
 
-```
 ```python
 >>> print(p)
 <example.Person named 'Molly'>
