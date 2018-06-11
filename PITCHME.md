@@ -279,20 +279,20 @@ namespace py = pybind11;
 PYBIND11_MODULE(mymath,m) {
     m.doc() = "pybind11 math module";
     m.def("add", &add,"A function which adds two numbers");
-    
 }
 
 ```
 
 +++
 
-### PyBind11 embraces C++ devs
+### PyBind11 embraces C++ developers
 
 ```cmake
 cmake_minimum_required(VERSION 2.8.12)
 project(mymath)
 
 add_subdirectory(pybind11)
+#the above adds cmake functionality specific to pybind11
 pybind11_add_module(cmake_example src/main.cpp)
 ```
 
@@ -301,11 +301,14 @@ see [github.com/pybind/cmake_example](https://github.com/pybind/cmake_example)
 
 Note:
 - template project brings `setup.py` along
-- easy integration of python-side unit testing
+- easy integration of python-side unit testing etc
 
----
+---?image=img/happy.jpeg
 
-## Summary
+Note:
+- pybind leverages a lot of the common day tasks 
+
+## Discussion and Summary
 
 +++
 
