@@ -1,7 +1,7 @@
 ---
 
 ## C++ from Python
-- A Report from the trenches -
+-- A Report from the trenches --
 
 Peter Steinbach (steinbach@scionics.de, twitter.com/psteinb_ ), C++UG Dresden, June 12, 2018 
 
