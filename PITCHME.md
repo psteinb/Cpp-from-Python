@@ -368,6 +368,7 @@ PYBIND11_MODULE(example, m) {
         .def("getName", &Person::getName);
 }
 ```
++++
 
 ### Make a `Person` pythonesque
 
