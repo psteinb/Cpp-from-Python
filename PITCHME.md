@@ -172,7 +172,7 @@ Titian, <a href="https://commons.wikimedia.org/wiki/File:Punishment_sisyph.jpg">
 
 +++
 
-### Not Enough?
+### Not Enough? Exporting a `struct`
 
 ```c
 typedef struct {
@@ -184,6 +184,7 @@ typedef struct {
 
 ```
 
++++
 
 ### Doing Garbage Collection
 
