@@ -111,9 +111,11 @@ Note:
 static struct PyModuleDef mymathmodule = {
    PyModuleDef_HEAD_INIT,
    “mymath", /* name of module */
-   "My documentation of mymath“, /* module documentation, may be NULL */
-   -1, /* size of per-interpreter state of the module,
-          or -1 if the module keeps state in global variables. */
+   "My documentation of mymath“, 
+   /* module documentation, may be NULL */
+   -1, /* size of per-interpreter module state,
+          or -1 if the module keeps 
+          state in global variables. */
    MyMethods
 };
 
@@ -256,10 +258,50 @@ Note:
 - Python 2.7, 3.x, and PyPy (PyPy2.7 >= 5.7) support
 - header-only without dependencies
 - Clang/LLVM 3.3 or newer, GCC 4.8 or newer, Microsoft Visual Studio 2015 Update 3 or newer, Intel C++ compiler 17 or newer, Cygwin/GCC
-- libre licensing: BSD 3-clause license
+- BSD 3-clause license
 
 @ulend
 
++++
+
+### `mymath` revisited
+
+```c++
+//pybind11_math.cpp
+#include <pybind11/pybind11.h>
+
+int add(int i, int j) {
+    return i + j;
+}
+
+namespace py = pybind11;
+
+PYBIND11_MODULE(mymath,m) {
+    m.doc() = "pybind11 math module";
+    m.def("add", &add,"A function which adds two numbers");
+    
+}
+
+```
+
++++
+
+### PyBind11 embraces C++ devs
+
+```cmake
+cmake_minimum_required(VERSION 2.8.12)
+project(mymath)
+
+add_subdirectory(pybind11)
+pybind11_add_module(cmake_example src/main.cpp)
+```
+
+see [github.com/pybind/cmake_example](https://github.com/pybind/cmake_example)
+
+
+Note:
+- template project brings `setup.py` along
+- easy integration of python-side unit testing
 
 ---
 
