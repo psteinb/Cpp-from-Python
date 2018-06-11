@@ -87,6 +87,12 @@ Note:
 - batteries included
 - `numpy` very popular in data science and HPC
 
++++
+
+## Python Is Popular
+
+![2018 Stackoverflow Developer Survey](img/languages-stackoverflow-half.png)
+
 ---
 
 ## How to interface?
