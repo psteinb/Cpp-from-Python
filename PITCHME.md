@@ -303,7 +303,7 @@ Note:
 - template project brings `setup.py` along
 - easy integration of python-side unit testing etc
 
----?image=img/happy.jpeg
+---?image=img/happy.jpeg&size=cover
 
 Note:
 - pybind leverages a lot of the common day tasks 
