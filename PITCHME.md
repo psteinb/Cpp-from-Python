@@ -17,13 +17,13 @@ Peter Steinbach (steinbach@scionics.de, twitter.com/psteinb_ ), C++UG Dresden, J
 
 ## __Why__ other languages?
 
-+++?image=img/laptop-at-night.jpeg
++++?image=img/laptop-at-night.jpeg&size=cover
 
 <div style="color: white; background-color: rgb(0, 102, 102,0.75);border-radius: 25px;padding: 20px;">
 <h2>Reinvent the wheel over-and-over?</h2>
 </div>
 
-+++?image=img/diverse-shoes.jpeg&size=auto 80%
++++?image=img/diverse-shoes.jpeg&size=cover
 
 ### Teams/Communities are diverse.
 
@@ -221,7 +221,7 @@ Custom_new(PyTypeObject *type, PyObject *args, PyObject *kwds)
 }
 ```
 
-+++?image=img/old_tools.jpeg
++++?image=img/old_tools.jpeg&size=cover
 
 ### Better Tools? 
 
@@ -304,6 +304,8 @@ Note:
 - easy integration of python-side unit testing etc
 
 ---?image=img/happy.jpeg&size=cover
+
+### Awesome!
 
 Note:
 - pybind leverages a lot of the common day tasks 
