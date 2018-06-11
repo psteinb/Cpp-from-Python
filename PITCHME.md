@@ -8,7 +8,7 @@ Peter Steinbach (steinbach@scionics.de, @psteinb_), C++UG Dresden, June 12, 2018
 
 ---
 
-### Agenda
+## Agenda
 
 1. __Why__
 2. __How__ (simple)
@@ -16,18 +16,17 @@ Peter Steinbach (steinbach@scionics.de, @psteinb_), C++UG Dresden, June 12, 2018
 
 ---
 
-### __Why__ other languages?
+## __Why__ other languages?
 
 
 +++?image=img/laptop-at-night.jpeg
 
-&nbsp;
-&nbsp;
+## Reinvent the wheel over-and-over?
 
-<div style="color: white; background-color: grey;">
-Reinvent the wheel over-and-over?<br/>
-Invalidate other people's work?
-</div>
+<!-- <div style="color: white; background-color: grey;"> -->
+<!-- Reinvent the wheel over-and-over?<br/> -->
+<!-- Invalidate other people's work? -->
+<!-- </div> -->
 
 +++?image=img/weights.jpeg
 
@@ -43,7 +42,7 @@ Teams are diverse.
 
 +++
 
-# Python
+## Python
 
 ```python
 $ python3                  
@@ -62,7 +61,7 @@ Note:
 
 +++
 
-# Python continued
+## Python continued
 
 ```python
 >>> tlist = [1,3,5,6]
@@ -79,7 +78,7 @@ Note:
 
 +++
 
-# Python modular
+## Python modular
 
 ```python
 >>> import numpy
