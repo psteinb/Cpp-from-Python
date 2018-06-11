@@ -93,7 +93,7 @@ Note:
 
 ![](img/languages-stackoverflow-half.png)
 
-Top 11 Languages in [2018 Stackoverflow Developer Survey](https://insights.stackoverflow.com/survey/2018/)
+Top Languages in [2018 Stackoverflow Developer Survey](https://insights.stackoverflow.com/survey/2018/)
 
 Note:
 - more use of C++ through integration with python
