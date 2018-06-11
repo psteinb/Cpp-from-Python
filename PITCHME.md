@@ -18,27 +18,20 @@ Peter Steinbach (steinbach@scionics.de, @psteinb_), C++UG Dresden, June 12, 2018
 
 ## __Why__ other languages?
 
-
 +++?image=img/laptop-at-night.jpeg
 
-## Reinvent the wheel over-and-over?
-
-<!-- <div style="color: white; background-color: grey;"> -->
-<!-- Reinvent the wheel over-and-over?<br/> -->
-<!-- Invalidate other people's work? -->
-<!-- </div> -->
+<div class="h2" style="color: white; background-color: grey;border-radius: 25px;padding: 30px;margin: auto;">
+Reinvent the wheel over-and-over?<br/>
+Invalidate other people's work?
+</div>
 
 +++?image=img/weights.jpeg
 
-<div style="color: white">
-C++ is for the heavy lifting!
-</div>
+### C++ is for the heavy lifting!
 
 +++?image=img/diverse-shoes.jpeg&size=auto 80%
 
-<div style="color: white">
-Teams are diverse.
-</div>
+### Teams are diverse.
 
 +++
 
