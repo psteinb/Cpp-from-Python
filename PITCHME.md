@@ -20,8 +20,8 @@ Peter Steinbach (steinbach@scionics.de, @psteinb_), C++UG Dresden, June 12, 2018
 
 +++?image=img/laptop-at-night.jpeg
 
-<div class="h2" style="color: white; background-color: rgb(0, 102, 102,0.6);border-radius: 25px;padding: 10px;margin: auto;">
-Reinvent the wheel over-and-over?
+<div style="color: white; background-color: rgb(0, 102, 102,0.6);border-radius: 25px;padding: 10px;margin: auto;">
+<h2>Reinvent the wheel over-and-over?</h2>
 </div>
 
 +++?image=img/weights.jpeg
