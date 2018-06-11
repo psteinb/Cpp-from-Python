@@ -181,7 +181,7 @@ typedef struct {
     PyObject_HEAD
     PyObject *first; /* first name */
     PyObject *last;  /* last name */
-    int number;
+    int age;
 } PersonObject;
 
 ```
@@ -215,7 +215,7 @@ Custom_new(PyTypeObject *type, PyObject *args, PyObject *kwds)
             Py_DECREF(self);
             return NULL;
         }
-        self->number = 0;
+        self->age = 0;
     }
     return (PyObject *) self;
 }
@@ -303,12 +303,96 @@ Note:
 - template project brings `setup.py` along
 - easy integration of python-side unit testing etc
 
----?image=img/happy.jpeg&size=cover
++++?image=img/happy.jpeg&size=cover
 
 ### Awesome!
 
 Note:
 - pybind leverages a lot of the common day tasks 
+
++++
+
+### Syntactic Sure in the binding
+
+```c++
+int add(int i = 41, int j = 1) {
+    return i + j;
+}
+
+namespace py = pybind11;
+
+PYBIND11_MODULE(mymath,m) {
+    m.doc() = "pybind11 math module";
+    m.def("add", &add, "A function which adds two numbers",
+      py::arg("i") = 1, py::arg("j") = 2);
+    //requires 'using namespace pybind11::literals;'
+    //m.def("add", &add, "i"_a=1, "j"_a=2);
+}
+```
++++
+
+### A `Person` again
+
+```c++
+
+struct Person {
+    std::string name = "";
+    int age = 0;
+
+    Pet(const std::string &name) : 
+        name(name), 
+        age(age) { }
+    
+    void setName(const std::string &name_) { name = name_; }
+    const std::string &getName() const { return name; }
+    
+    //...
+
+};
+
+```
+
++++
+
+### Binding a `Person`
+
+```c++
+#include <pybind11/pybind11.h>
+
+namespace py = pybind11;
+
+PYBIND11_MODULE(example, m) {
+    py::class_<Person>(m, "Person")
+        .def(py::init<const std::string &>())
+        .def("setName", &Person::setName)
+        .def("getName", &Person::getName);
+}
+```
+
+### Make `Person` pythonesque
+
+```python
+>>> print(p)
+<example.Person object at 0x10cd98060>
+```
+
+```c++
+py::class_<Person>(m, "Person")
+    .def(py::init<const std::string &>())
+    .def("setName", &Person::setName)
+    .def("getName", &Person::getName)
+    .def("__repr__",
+        [](const Person &a) {
+            return "<example.Person named '" + a.name + "'>";
+        }
+    );
+```
+
+```
+```python
+>>> print(p)
+<example.Person named 'Molly'>
+```
 
 ## Discussion and Summary
 
