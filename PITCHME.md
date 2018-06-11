@@ -110,7 +110,7 @@ Note:
 ```python
 >>> import mymath
 >>> mymath.add(2,3)
-5.0
+5
 ```
 
 +++
