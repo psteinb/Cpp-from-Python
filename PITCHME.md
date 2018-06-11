@@ -164,13 +164,11 @@ static PyObject* module_function(PyObject *self, PyObject *args){
 Note:
 Finally we do some work!
 
-+++
++++?image=img/902px-Punishment_sisyph.jpg&size=auto 80%
 
-![Titian, Sisyphus, https://commons.wikimedia.org/wiki/File:Punishment_sisyph.jpg](img/902px-Punishment_sisyph.jpg)
-
-<!-- <div style="color: white; margin-top: 500px;font-size: 14px"> -->
-<!--  -->
-<!-- </div> -->
+<div style="color: white; margin-top: 80%;margin-left: 80%;font-size: 14px">
+Titian, <a href="https://commons.wikimedia.org/wiki/File:Punishment_sisyph.jpg">Sisyphus</a>
+</div>
 
 +++
 
