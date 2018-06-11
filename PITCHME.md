@@ -369,7 +369,7 @@ PYBIND11_MODULE(example, m) {
 }
 ```
 
-### Make `Person` pythonesque
+### Make a `Person` pythonesque
 
 ```python
 >>> print(p)
@@ -392,6 +392,49 @@ py::class_<Person>(m, "Person")
 >>> print(p)
 <example.Person named 'Molly'>
 ```
++++
+
+### Inheritance?
+
+```c++
+struct Person {
+    Person(const std::string &name) : name(name) { }
+    std::string name;
+};
+
+struct Coder : Person {
+    Coder(const std::string &name) : Person(name) { }
+    std::string work() const { return "Doh!"; }
+};
+
+```
++++
+
+### Python <3 Inheritance
+
+```c++
+PYBIND11_MODULE(example, m) {
+py::class_<Person>(m, "Person")
+   .def(py::init<const std::string &>())
+   .def_readwrite("name", &Person::name);
+
+// Method 1: template parameter:
+py::class_<Coder, 
+           Person /* parent type! */>(m, "Coder")
+    .def(py::init<const std::string &>())
+    .def("work", &Coder::work);
+    
+```
+
+
+```python
+>>> p = example.Coder('Molly')
+>>> p.name
+u'Molly'
+>>> p.work()
+u'Doh!'
+```
+
 
 ## Discussion and Summary
 
