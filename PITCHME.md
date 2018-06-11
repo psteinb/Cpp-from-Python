@@ -22,7 +22,7 @@ C++UG Dresden, June 12, 2018
 +++?image=img/laptop-at-night.jpeg&size=cover
 
 <div style="color: white; background-color: rgb(0, 102, 102,0.75);border-radius: 25px;padding: 20px;">
-<h2>Reinvent the wheel over-and-over?</h2>
+Reinvent the wheel over-and-over?
 </div>
 
 +++?image=img/diverse-shoes.jpeg&size=cover
@@ -91,7 +91,12 @@ Note:
 
 ## Python Is Popular
 
-![2018 Stackoverflow Developer Survey](img/languages-stackoverflow-half.png)
+![](img/languages-stackoverflow-half.png)
+
+Top 11 Languages in [2018 Stackoverflow Developer Survey](https://insights.stackoverflow.com/survey/2018/)
+
+Note:
+- more use of C++ through integration with python
 
 ---
 
