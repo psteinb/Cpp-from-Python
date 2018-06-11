@@ -237,6 +237,21 @@ Note:
 
 ### [pybind11](github.com/pybind/pybind11)
 
++++
+
+### pybind11
+
+> pybind11 is a lightweight header-only library that exposes C++ types in Python and vice versa
+
+@ul
+
+- Python 2.7, 3.x, and PyPy (PyPy2.7 >= 5.7) support
+- header-only without dependencies
+- Clang/LLVM 3.3 or newer, GCC 4.8 or newer, Microsoft Visual Studio 2015 Update 3 or newer, Intel C++ compiler 17 or newer, Cygwin/GCC
+- libre licensing: BSD 3-clause license
+
+@ulend
+
 
 ---
 
