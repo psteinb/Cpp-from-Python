@@ -427,7 +427,6 @@ py::class_<Coder,
     
 ```
 
-
 ```python
 >>> p = example.Coder('Molly')
 >>> p.name
@@ -436,6 +435,38 @@ u'Molly'
 u'Doh!'
 ```
 
++++
+
+### Python Objects
+
+```c++
+void print_dict(py::dict dict) {
+    /* Easily interact with Python types */
+    for (auto item : dict)
+        std::cout << "key=" << std::string(py::str(item.first)) << ", "
+                  << "value=" << std::string(py::str(item.second)) << std::endl;
+}
+
+PYBIND11_MODULE(mymath,m) {
+m.def("print_dict", &print_dict);
+}
+
+```
+
+```python
+>>> from mymath import print_dict
+>>> print_dict({'foo': 123, 'bar': 'hello'})
+key=foo, value=123
+key=bar, value=hello
+```
+
++++?image=img/city-man-person-lights.jpg&size=cover
+
+<div style="color: white; margin-top: 60%">
+There is a lot more to see:
+</div>
+
+[pybind11.readthedocs.io](http://pybind11.readthedocs.io/en/master/index.html)
 
 ## Discussion and Summary
 
