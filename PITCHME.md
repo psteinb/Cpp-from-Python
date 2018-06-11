@@ -235,7 +235,7 @@ Note:
 
 +++?image=img/pybind11-logo.png&size=70% auto
 
-<div style="color: white; margin-top: 50%;font-size: 2em">
+<div style="color: white; margin-top: 50%;font-size: 1.5em">
 
 [github.com/pybind/pybind11](https://github.com/pybind/pybind11)
 
