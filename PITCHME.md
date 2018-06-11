@@ -174,4 +174,50 @@ Titian, <a href="https://commons.wikimedia.org/wiki/File:Punishment_sisyph.jpg">
 
 ### Not Enough?
 
+```c
+typedef struct {
+    PyObject_HEAD
+    PyObject *first; /* first name */
+    PyObject *last;  /* last name */
+    int number;
+} PersonObject;
 
+```
+
+
+### Doing Garbage Collection
+
+```c
+static void
+Custom_dealloc(CustomObject *self)
+{
+    Py_XDECREF(self->first);
+    Py_XDECREF(self->last);
+    Py_TYPE(self)->tp_free((PyObject *) self);
+}
+
+static PyObject *
+Custom_new(PyTypeObject *type, PyObject *args, PyObject *kwds)
+{
+    CustomObject *self;
+    self = (CustomObject *) type->tp_alloc(type, 0);
+    if (self != NULL) {
+        self->first = PyUnicode_FromString("");
+        if (self->first == NULL) {
+            Py_DECREF(self);
+            return NULL;
+        }
+        self->last = PyUnicode_FromString("");
+        if (self->last == NULL) {
+            Py_DECREF(self);
+            return NULL;
+        }
+        self->number = 0;
+    }
+    return (PyObject *) self;
+}
+```
+
++++image=img/old_tools
+
+### Better Tools? 
