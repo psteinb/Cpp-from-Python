@@ -235,11 +235,15 @@ Note:
 
 +++?image=img/pybind11-logo.png&size=70% auto
 
-<div>
+<div style="color: white; margin-top: 60%;font-size: 14px">
 
-### [pybind11](github.com/pybind/pybind11)
+[github.com/pybind/pybind11](https://github.com/pybind/pybind11)
 
 </div>
+
+Note:
+- 3.5k stars
+- 500 forks
 
 +++
 
