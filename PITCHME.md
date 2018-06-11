@@ -443,8 +443,10 @@ u'Doh!'
 void print_dict(py::dict dict) {
     /* Easily interact with Python types */
     for (auto item : dict)
-        std::cout << "key=" << std::string(py::str(item.first)) << ", "
-                  << "value=" << std::string(py::str(item.second)) << std::endl;
+        std::cout << "key=" << std::string(py::str(item.first)) 
+                  << ", "
+                  << "value=" << std::string(py::str(item.second)) 
+                  << std::endl;
 }
 
 PYBIND11_MODULE(mymath,m) {
@@ -472,7 +474,29 @@ There is a lot more to see:
 
 +++
 
+
 ### What I didn't discuss
+
+- [Boost.Python](http://boostorg.github.io/python/doc/html/index.html)
+- [swig](http://www.swig.org/)
+- [ctypes](https://docs.python.org/3/library/ctypes.html) / [cffi](http://cffi.readthedocs.io/en/latest/)
+
+Note:
+- Boost: viral install (!= `vcpkg`/`conan`)
+- Boost: active development?
+- swig: nice for simple stuff, not flexible enough
+- ctypes: code overhead due to casting in python
+- cffi: c code in python strings?
+
++++
+
+### pybind11
+
+- open-source python bindings from C++ and vice verse
+- very active community and good documentation
+- very mature covering 80-90% of use cases
+
+#### [github.com/pybind/pybind11](https://github.com/pybind/pybind11)
 
 +++
 
