@@ -146,14 +146,14 @@ Note:
 //mymath.c continued
 
 static PyMethodDef MyMethods[] = {
-{"add", module_function, METH_VARARGS, "Adds two numbers"},
-{NULL, NULL, 0, NULL}
+   {"add", module_function, METH_VARARGS, "Adds two numbers"},
+   {NULL, NULL, 0, NULL}
 };
 
 ```
 
 Note:
-Populate the methods table
+Populate the methods table!
 
 +++
 
