@@ -124,11 +124,9 @@ Note:
 static struct PyModuleDef mymathmodule = {
    PyModuleDef_HEAD_INIT,
    “mymath", /* name of module */
-   "My documentation of mymath“, 
-   /* module documentation, may be NULL */
+   "My documentation of mymath“, /* docstring, may be NULL */
    -1, /* size of per-interpreter module state,
-          or -1 if the module keeps 
-          state in global variables. */
+          or -1 if the module keeps state in global variables. */
    MyMethods
 };
 
