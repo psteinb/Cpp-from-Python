@@ -312,7 +312,7 @@ Note:
 
 +++
 
-### Syntactic Sure in the binding
+### Syntactic Sugar while binding
 
 ```c++
 int add(int i = 41, int j = 1) {
