@@ -11,9 +11,49 @@ C++UG Dresden, June 12, 2018
 
 ## Agenda
 
+0. __Preface__
 1. __Why__
 2. __How__ (simple)
 3. __How__ (for real)
+
+---
+
+## __Preface__
+
++++
+
+### [Scionics Computer Innovation GmbH](https://www.scionics.de)
+
+![](img/scionics_main_logo.png)
+
+Note:
+- founded in 2001
+- located in Dresden, Saxony (Germany)
+- co-owned by John Duperon and Jeffrey Oegema
+- currently 35 staff
+
++++ 
+
+### [Max Planck Institute of Molecular Cell Biology and Genetics](https://www.mpi-cbg.de)
+
+![](img/800px-MPI-CBG_building_outside_4pl.jpg)
+
+Note:
+- my base: scientific computing
+- focus: 
+    + data analysis & visualisation
+    + machine learning
+    + performance
+
+
++++
+
+### Open-Source!
+
+![](img/opensource-550x475.png)
+
+
+**[github.com/psteinb/Cpp-from-Python](https://github.com/psteinb/Cpp-from-Python)**
 
 ---
 
