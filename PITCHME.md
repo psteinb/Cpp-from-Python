@@ -507,8 +507,49 @@ Note:
 - very active community and good documentation
 - very mature covering 80-90% of use cases
 
+&nbsp;
+
 #### [github.com/pybind/pybind11](https://github.com/pybind/pybind11)
 
 +++
 
-###
+### Hold the GIL
+
+```c++
+class PyAnimal : public Animal {
+public:
+    /* Inherit the constructors */
+    using Animal::Animal;
+
+    /* Trampoline (need one for each virtual function) */
+    std::string go(int n_times) {
+        /* Acquire GIL before calling Python code */
+        py::gil_scoped_acquire acquire;
+
+        PYBIND11_OVERLOAD_PURE(
+            std::string, /* Return type */
+            Animal,      /* Parent class */
+            go,          /* Name of function */
+            n_times      /* Argument(s) */
+        );
+    }
+};
+```
+
+### Return Value Control
+
+```c++
+/* Function declaration */
+Data *get_data() { return _data; /* (pointer to a static data structure) */ }
+...
+
+/* Binding code */
+m.def("get_data", &get_data); // <-- KABOOM, will cause crash when called from Python
+```
+
+```c++
+m.def("get_data", &get_data, return_value_policy::reference);
+```
+(global data instance is only referenced without any implied transfer of ownership)
+
+#### For Details [pybind11 policies](http://pybind11.readthedocs.io/en/stable/advanced/functions.html#return-value-policies)
