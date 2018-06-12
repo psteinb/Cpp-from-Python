@@ -27,8 +27,8 @@ C++UG Dresden, June 12, 2018
 ![](img/scionics_main_logo.png)
 
 - founded in 2001
-- located in Dresden, Saxony (Germany)
 - currently 35 staff
+- software and consulting
 
 +++ 
 
@@ -37,7 +37,7 @@ C++UG Dresden, June 12, 2018
 ![](img/800px-MPI-CBG_building_outside_4pl.jpg)
 
 Note:
-- my base: scientific computing
+- my base: scientific computing @ MPI CBG
 - focus: 
     + data analysis & visualisation
     + machine learning
