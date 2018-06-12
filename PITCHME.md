@@ -26,10 +26,8 @@ C++UG Dresden, June 12, 2018
 
 ![](img/scionics_main_logo.png)
 
-Note:
 - founded in 2001
 - located in Dresden, Saxony (Germany)
-- co-owned by John Duperon and Jeffrey Oegema
 - currently 35 staff
 
 +++ 
@@ -48,12 +46,10 @@ Note:
 
 +++
 
-### Open-Source!
+### [github.com/psteinb/Cpp-from-Python](https://github.com/psteinb/Cpp-from-Python)
 
 ![](img/opensource-550x475.png)
 
-
-**[github.com/psteinb/Cpp-from-Python](https://github.com/psteinb/Cpp-from-Python)**
 
 ---
 
